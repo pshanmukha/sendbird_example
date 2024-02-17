@@ -18,3 +18,10 @@ A robust chat application built with Flutter. This application provides a seamle
 - [image_picker](https://pub.dev/packages/image_picker): For picking images from the device gallery or camera.
 - [cached_network_image](https://pub.dev/packages/cached_network_image): For displaying and caching network images.
 - [intl](https://pub.dev/packages/intl): For date formatting support.
+
+## 🖼 Screenshots
+
+<p align="center">
+<img alt="IPhone" width="150" src="https://github.com/pshanmukha/sendbird_example/blob/main/lib/screenshots/iphone.png">
+<img alt="Android" width="150" src="https://github.com/pshanmukha/sendbird_example/blob/main/lib/screenshots/android.png">
+</p>
