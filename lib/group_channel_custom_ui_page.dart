@@ -175,6 +175,10 @@ class _GroupChannelCustomUIPageState extends State<GroupChannelCustomUIPage> {
             ? MainAxisAlignment.end
             : MainAxisAlignment.start,
         children: <Widget>[
+          if (chatMessage.isFromCurrentUser)
+            Expanded(
+              flex: 2,
+                child: Container()),
           if (!chatMessage.isFromCurrentUser)
             Container(
               margin: const EdgeInsets.only(left: 10),
@@ -195,6 +199,7 @@ class _GroupChannelCustomUIPageState extends State<GroupChannelCustomUIPage> {
             width: 4,
           ),
           Flexible(
+            flex: 6,
             child: Container(
               margin: const EdgeInsets.all(10.0),
               decoration: BoxDecoration(
@@ -223,6 +228,10 @@ class _GroupChannelCustomUIPageState extends State<GroupChannelCustomUIPage> {
               ),
             ),
           ),
+          if (!chatMessage.isFromCurrentUser)
+            Expanded(
+                flex: 2,
+                child: Container())
         ],
       ),
     );
